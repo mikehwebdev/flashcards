@@ -20,7 +20,7 @@ export default [{
 }, 
 {
     id:4,
-    question:"What does filter() do Redux?",
+    question:"What does filter() do?",
     answer:["Filter loops over an array and only returns elements that match true for the given bit of code.", "eg const nums = [1, 2, 3, 4, 5]", "const moreThan3 = nums.filter(num => return num > 3) ", " so const moreThan3 = [4,5]"]
     
 }, 
@@ -47,5 +47,10 @@ export default [{
     id:8,
     question:"What are the non-primitive data types?",
     answer:["Array", "Objects", "Maps","Sets"]
+},
+{
+    id:9,
+    question:"What does the spread operator do?",
+    answer:["before overwriting a property I’m changing.","const users = ['Dylan', 'Per', 'Dollan'];","const allUsers = ['Olivia', ...users];", "setState(","prevState => {…prevstate, name: newName})", "You can also use this in destructuring","const {name, …remainder} = defaults","console.log(remainder) returns dob, address but not name here for example"]
 }
 ]

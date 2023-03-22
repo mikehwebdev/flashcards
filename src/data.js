@@ -66,7 +66,7 @@ export default [{
 {
     id:12,
     question: "What is specificity in CSS?",
-    answer:[""]
+    answer:["Specificity in CSS is the order of priority when applying styles in CSS.", "Highest priority is styles applied inline (1000 points), then the # id selector (100), then .class (including pseudo-class or attribute selector -  all 10 points), then the element selector or pseudo element (1 point).","So an example would be a#big-button would be 1 + 100 points"]
 }
 ]
 

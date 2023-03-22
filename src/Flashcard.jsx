@@ -6,15 +6,15 @@ export default function Flashcard(props){
 
     function nextQuestion(){
         setRevealAnswer(false)
-        props.handleClick()
-    }
+        setTimeout(()=>{
+            props.handleClick()
+    },1500)}
 
     return (
         <>
         <h2 className="question">{props.question}</h2>
+        <div className={!revealAnswer ? "answer-elements": "answer-elements revealed"}>{props.answer}</div>
         {!revealAnswer && <button onClick={()=> setRevealAnswer(true)}>Reveal answer</button>}
-        {!revealAnswer && <button onClick={nextQuestion}>Skip to another question</button>}    
-        {revealAnswer && <div className="answer-elements">{props.answer}</div>}
         {revealAnswer && <button onClick={nextQuestion}>Next question</button>}
 
         </>

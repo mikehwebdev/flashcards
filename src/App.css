@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.app {
+    
+    font-family: 'Inter', sans-serif;
+}
+
+.app, .flashcard, .answer-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.answer-elements {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1500ms ease-in;
+    opacity: 0;
+    
+}
+
+.revealed {
+     max-height: 1000px;
+     transition: all 1500ms ease-in;
+     opacity: 1;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 0.75rem;
+}
+

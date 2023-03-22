@@ -8,6 +8,7 @@ function App() {
 const [startScreen, setStartScreen] = useState(true)
 const [flashcard, setFlashcard] = useState('')
 
+
 function fetchQuestion() {
   setStartScreen(false)
   let randomIndex = Math.floor(Math.random() * data.length )
@@ -25,7 +26,7 @@ function fetchQuestion() {
 
   return (
     <div className="app">
-      <h1>Mike's Javascript Study Aid</h1>
+      <h1>Mike's Web development Study Aid</h1>
 {
       startScreen?   
         <div className="start-screen">

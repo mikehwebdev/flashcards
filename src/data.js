@@ -51,6 +51,37 @@ export default [{
 {
     id:9,
     question:"What does the spread operator do?",
-    answer:["before overwriting a property I’m changing.","const users = ['Dylan', 'Per', 'Dollan'];","const allUsers = ['Olivia', ...users];", "setState(","prevState => {…prevstate, name: newName})", "You can also use this in destructuring","const {name, …remainder} = defaults","console.log(remainder) returns dob, address but not name here for example"]
+    answer:["Allows you to copy in an object or array.","I use this in React for copying in an objects previous state before overwriting a property I'm changing.","eg const users = ['Dylan', 'Per', 'Dollan'];","const allUsers = ['Olivia', ...users];", "setState(","prevState => {…prevstate, name: newName})", "You can also use this in destructuring","const {name, …remainder} = defaults","console.log(remainder) returns dob, address but not name here for example"]
+},
+{
+    id:10,
+    question:"What does the rest operator do?",
+    answer:["In the example below you can add in as many parameters as you like and the rest operator will use them all in the code", "function addNums(...nums){", "return nums.reduce((total, current) => { return total + current; }, 0)", "}", "console.log(addNums(1,2,3)) output = 6", "console.log(addNums(1,2)) output = 3"]
+},
+{
+    id:11,
+    question: "Why do we desctructure arrays and objects?",
+    answer:["We destructure to create clean code and make it more readable. ","In the below it makes more sense to deconstruct the array so you can just refer to day rather than the zero index of dob.","The example below that helps you re-name properties so that the code you right is more readable i.e referring to firstName rather than f.", "Order is important though when destructuring so you can be sure each variable is assigned to the correct index position.", "const dob = [10, 25, 1987];", "const day = dob[0]", "const [day, month, year] = dob;", "or", "const user = {f: 'Mike',", "l: 'Hatton'", " };"," const {f: firstName, l: lastName } = user;"],
+}, 
+{
+    id:12,
+    question: "What is specificity in CSS?",
+    answer:[""]
 }
 ]
+
+
+
+
+
+
+
+
+
+
+
+// {
+//     id:XX,
+//     question:
+//     answer:[]
+// }

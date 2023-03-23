@@ -66,7 +66,21 @@ export default [{
 {
     id:12,
     question: "What is specificity in CSS?",
-    answer:["Specificity in CSS is the order of priority when applying styles in CSS.", "Highest priority is styles applied inline (1000 points), then the # id selector (100), then .class (including pseudo-class or attribute selector -  all 10 points), then the element selector or pseudo element (1 point).","So an example would be a#big-button would be 1 + 100 points"]
+    answer:["Specificity in CSS is the order of priority when applying styles in CSS.", "Highest priority is styles applied inline (1000 points), then the # id selector (100), then .class (including pseudo-class or attribute selector -  all 10 points), then the element selector or pseudo element (1 point).","So an example would be a#big-button would be 1 + 100 points", "or a.big-button would be 1 + 10", "Note Pseudo-classes also have a specificity of 10"]
+},
+{
+    id:13,
+    question: "What is responsive design?",
+    answer:["Responsive design is HTML and CSS working in tandem to make your content look good on whatever device you use to access it.", "No information shouls be lostbecause you use the 'wrong' device.", "Typically, a web developer will think in terms of mobile, tablet and desktop experiences.", "Devs should veer away from using fixed values or pixel values and instead use EM, REM and percentages.", "Flexbox and grid are also excellent tools to make web pages responsive.", "to et the viewports of the device correctly we include the following <meta> viewport element.", '<meta name="viewport" content="width=device-width, initial-scale=1.0">', "This ensures that the default width of the content is no wider than the device and that it isn't zoomed in (i.e pinch/unpinch zoom)", "Media queries allow us to apply css properties if certain conditions are met i.e viewport width.", "So we can flip from say a flexbox column layout to a row layout when moving from mobiel to desktop widths.", "We should always design mobile first.", "This will ensure our site loads more quickly for mobile users and its easier to expand the design up to desktop rather than down to mobile."]
+},{
+    id:14,
+    question:"What are Promises?",
+    answer:["Promises are used for asynchronous actions that have three states: Fulfilled, rejected and pending.", "The interview analogy is good here.", "Fetch for example is a DOM API that allows us to retrieve data via API which returns a promise.", "If the promise is fulfilled we can use .then method to use that resolved data i.e display an image that's retrieved by API.", "If the promise fails you can then use the .catch method to then display a “Sorry no images” or error message.", "Regardless of what is returned you can use .finally - which is often used for cleaning up code say.", "We can also use await on promises like so:", "const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');", "const json = await response.json();", "this forces the code to wait for the server response before continuing. You will need to wrap this in a try statement and include a catch statement for any errors."]
+}, 
+{
+    id:15,
+    question:"What are pass by value and pass by reference?",
+    answer:["Primitives(String, number, null, undefined, boolean) are pass by value. Functions, objects and arrays are pass by reference.", "Primitives are immutable so are passed by value. This is essentially a copy of the original in memory which you can then change.", "Pass by reference essentially passes the address of the original and so any changes made effect the original. "]
 }
 ]
 

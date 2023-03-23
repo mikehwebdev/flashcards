@@ -60,8 +60,8 @@ export default [{
 },
 {
     id:11,
-    question: "Why do we desctructure arrays and objects?",
-    answer:["We destructure to create clean code and make it more readable. ","In the below it makes more sense to deconstruct the array so you can just refer to day rather than the zero index of dob.","The example below that helps you re-name properties so that the code you right is more readable i.e referring to firstName rather than f.", "Order is important though when destructuring so you can be sure each variable is assigned to the correct index position.", "const dob = [10, 25, 1987];", "const day = dob[0]", "const [day, month, year] = dob;", "or", "const user = {f: 'Mike',", "l: 'Hatton'", " };"," const {f: firstName, l: lastName } = user;"],
+    question: "Why do we destructure arrays and objects?",
+    answer:["We destructure to create clean code and make it more readable. ","In the below it makes more sense to deconstruct the array so you can just refer to day rather than the zero index of dob.", "Order is important though when destructuring so you can be sure each variable is assigned to the correct index position.", "const dob = [10, 25, 1987];", "const day = dob[0]", "const [day, month, year] = dob;", "or","The example below that helps you re-name properties so that the code you right is more readable i.e referring to firstName rather than f.", "const user = {f: 'Mike',", "l: 'Hatton'", " };"," const {f: firstName, l: lastName } = user;"],
 }, 
 {
     id:12,

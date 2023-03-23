@@ -23,13 +23,14 @@
     overflow: hidden;
     transition: all 1500ms ease-in;
     opacity: 0;
-    
+    align-items: flex-start;
 }
 
 .revealed {
      max-height: 1000px;
      transition: all 1500ms ease-in;
      opacity: 1;
+     justify-content: flex-start;
 }
 
 h1 {
@@ -43,9 +44,10 @@ h2 {
     font-size: 1.4rem;
     font-weight: 400;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 p {
-    font-size: 0.75rem;
+    font-size: 1.1rem;
 }
 

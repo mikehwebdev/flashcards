@@ -27,7 +27,7 @@ export default [{
  {
     id:5,
     question:"What does reduce() do?",
-    answer:["Reduce is commonly used to reduce an array of numbers to a single number. It’ll iterate over the array and take the initial number (0 in this case) and add each element to the current total as it iterates.", `const sum = nums.reduce((total, current) => {
+    answer:["Reduce is commonly used to reduce an array of numbers to a single number.","It'll iterate over the array and take the initial number (0 in this case) and add each element to the current total as it iterates.", `const sum = nums.reduce((total, current) => {
         return total + current;
     }, 0)
     `,"console.log(sum); - returns 15"]
@@ -36,7 +36,7 @@ export default [{
 {
     id:6,
     question:"What's the difference between undefined and null?",
-    answer:["Null is intentional – undefined is not. Null  is defined but has an empty value.","An example might be a customer record will have email address and password as bare minimums to having an account, but the object will have properties for Name and DOB but are as yet undefined."]
+    answer:["Null is intentional - undefined is not. Null  is defined but has an empty value.","An example might be a customer record will have email address and password as bare minimums to having an account, but the object will have properties for Name and DOB but are as yet undefined."]
 },
 {
     id:7,

@@ -81,6 +81,42 @@ export default [{
     id:15,
     question:"What are pass by value and pass by reference?",
     answer:["Primitives(String, number, null, undefined, boolean) are pass by value. Functions, objects and arrays are pass by reference.", "Primitives are immutable so are passed by value. This is essentially a copy of the original in memory which you can then change.", "Pass by reference essentially passes the address of the original and so any changes made effect the original. "]
+},
+{
+    id:16,
+    question:"What does toUpperCase() do?",
+    answer:["This method returns a string in all uppercase no matter the case each letter currently is."]
+},
+{
+    id:17,
+    question:"What does toLowerCase() do?",
+    answer:["This method returns a string in all lowercase no matter the case each letter currently is."]
+},
+{
+    id:18,
+    question:"What does slice() do?",
+    answer:["slice() returns a new array - the first and second parameters are the index of where the slice should occur.",`eg const array = ["apple", "orange", "grapes", "melon"]`, `const newArray = array.slice(1,2)`, `newArray will be ["oranges", "grapes"]`]
+},
+{
+    id:19,
+    question:"What does .split() do?",
+    answer:[`.split() will convert a sring into an array of substrings`,`.split("") returns an array of all the characters.`,`text.split(" ") returns a array of words.`]
+},
+{
+    id:20,
+    question:"What does .join() do?",
+    answer:[`Turns an array into a string.`,`const fruits = ["Banana", "Orange", "Apple", "Mango"]`, `fruits.join() returns Banana,Orange,Apple,Mango`, `fruits.join(" ") returns Banana Orange Apple Mango`, `fruits.join(" and ") returns Banana and Orange and Apple and Mango`]
+},
+{
+    id:21,
+    question:`What does endsWith() do?`,
+    answer:[`endsWith() checks to see if a string ends with the supplied string and returns a boolean.`, `let text = "Hello world"`,
+    `let result =  text.endsWith("world") === true`, `let result =  text.endsWith("wizard") === false`]
+}, 
+{
+    id:21,
+    question:`What does reverse() do?`,
+    answer:[`Reverses the order of an array.`]
 }
 ]
 

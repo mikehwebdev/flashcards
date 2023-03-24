@@ -8,7 +8,6 @@ function App() {
 const [startScreen, setStartScreen] = useState(true)
 const [flashcard, setFlashcard] = useState('')
 
-
 function fetchQuestion() {
   setStartScreen(false)
   let randomIndex = Math.floor(Math.random() * data.length )

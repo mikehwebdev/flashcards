@@ -117,6 +117,16 @@ export default [{
     id:21,
     question:`What does reverse() do?`,
     answer:[`Reverses the order of an array.`]
+},
+{
+    id:22,
+    question:`How do you reverse a string?`,
+    answer:["There is no built in method","First you need to convert to an array using, .split(''),", "then reverse() to reverse the array", "then .join('') to convert it back into a string.", "Alternative:", "You can for loop over the string and decrement (i--)", "Then you can += to a new string"]
+},
+{
+    id:23,
+    question:`How to loop over an array that has a nested array?`,
+    answer:["for of loop works best:", "If you had a superhero object that had an array of powers for each character:", "for (let character of characters){", "for (let power of character.powers){","console.log(power)", "}", "}"]
 }
 ]
 

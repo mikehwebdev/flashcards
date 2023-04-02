@@ -3,6 +3,8 @@ import Flashcard from './Flashcard'
 import data from './data'
 import './App.css'
 
+
+
 function App() {
 
 const [startScreen, setStartScreen] = useState(true)

@@ -127,6 +127,25 @@ export default [{
     id:23,
     question:`How to loop over an array that has a nested array?`,
     answer:["for of loop works best:", "If you had a superhero object that had an array of powers for each character:", "for (let character of characters){", "for (let power of character.powers){","console.log(power)", "}", "}"]
+},
+{
+    id:24,
+    question:`What is does includes() do?`,
+    answer:["includes() loops over an array and if any array entry includes the provided value it returns true."," Otherwise it returns false.","The second parameter is for starting index - the default is zero"]
+}, 
+{
+    id:25,
+    question:"How can we establish if a number is odd or even?",
+    answer:[`We can use the Modulus(remainder) here.`, `If you check for a remainder after dividing by 2 an even number will be zero.`,`An odd number will have a remainder.`, `EG`, `function test (number) {`,`if(number % 2==0){`,`return "even"`,`} else {`,`return "odd"`, `}`, `}`]     
+}, 
+{
+   id:26,
+   question:"What does flat() do?",
+   answer:[" flat() returns a new array with all sub-arrays in the old array concatanated into one array.", "You can specifiy the depth you want to flatten with the parameter.", "This is helpful if there's multiple layers of nested arrays.", "EG if you want a third level of sub-arrays and beyond left alone you can specifiy const newArray = array.flat(2)"]
+}, {
+    id:27,
+    question:"",
+    answer:[]
 }
 ]
 
